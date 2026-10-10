@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Incoming media and in-flight transfers.
+# The server writes received files here and the client stages partial downloads;
+# these are personal photos and videos, and a single run can amount to tens of
+# gigabytes. The real library lives outside the repository (/mnt/c/gs/upload.go).
+uploads/
+_pending/
+_tmp/
+
+# Manual backups kept beside the originals before edits (client.py.bkp01,
+# server.py.bkp01, ...). They stay on disk on purpose, but git history already
+# serves that role, so they do not belong in the repository.
+*.bkp[0-9]*
+*.before_translation
+
+# OS noise
+.DS_Store
+Thumbs.db
